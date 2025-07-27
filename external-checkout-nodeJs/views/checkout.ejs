@@ -1,0 +1,6 @@
+<h1>Checkout for Product ID: <%= product_id %></h1>
+<form action="/pay" method="post">
+  <input type="hidden" name="order_id" value="<%= product_id %>">
+  <input type="email" name="email" placeholder="Your email" required />
+  <button type="submit">Pay Now</button>
+</form>
